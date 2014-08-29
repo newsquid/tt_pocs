@@ -1,0 +1,2 @@
+docker run -v `pwd`:/app -v `pwd`/.m2:/root/.m2 -it \
+--entrypoint bash hfmg-clojure clj "$@"

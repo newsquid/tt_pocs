@@ -1,5 +1,5 @@
 build:
-	docker build -t clojure .
+	docker build -t hfmg-clojure .
 
 run:
-	docker run -it clojure
+	docker run -v `pwd`/app -it -e LEIN_ROOT=true hfmg-clojure
