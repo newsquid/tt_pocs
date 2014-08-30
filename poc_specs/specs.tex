@@ -1,0 +1,47 @@
+\documentclass[a4paper, titlepage]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[bookmarks]{hyperref}
+
+\begin{document}
+
+\title{
+	Spec for TrunkTrunk-rewrite proof-of-concepts,\\
+	an attempt to get rid of Rails.
+}
+\maketitle
+
+\section{Demands}
+The following demands/concepts should be meet and proved where applicable.
+
+\paragraph*{Server:}
+\begin{quote} %hack to get indentation without using the external enumitem package
+\begin{description}
+\item [Static types:] Language should have static types.
+\item [Database integration:] Use of ORM or similar relevant concept. (MYSQL support is a plus because of google compute
+	engine support).
+\item [Productivity:] It should be possible to 'be productive' in the
+	technologies chosen, meaning that some highlevel support for http
+	endpoints/routing, database mapping etc. is needed. (In particular, C
+	probably doesn't fit this bill).
+\item [RESTful:] We want to keep TrunkTrunk as restful as possible.
+\item [OAUTH/Users:] We need/want support for consuming oauth users, as well as
+	nsq-oauth services.
+\item [REST client:] Beyond being a REST server, our backend will need a
+	viable rest-client to interact with NSQ and logging services.
+\item [Unit tests:] There must adequate support for testing, including
+	data-seeding for testing relevant database concepts.
+\end{description}
+\end{quote}
+
+\paragraph*{Client:}
+\begin{quote} %hack to get indentation without using the external enumitem package
+\begin{description}
+\item [SEO friendly:] For Single-Page-Application---like technologies, such as
+	AngularJS, some indication of SEO-friendliness must must be illustrated.
+\item [Modularity:] Must be modular (I think we meant as in: well-separated from
+	the backend?).
+\item [Oauth:] Must support oauth (in order to be an in-browser nsq-client?)
+\end{description}
+\end{quote}
+\end{document}
