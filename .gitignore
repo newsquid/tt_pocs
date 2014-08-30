@@ -9,3 +9,45 @@
 *.cmxa
 _build/
 poc_specs/tmp
+
+
+# Scala POC
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+## java specific
+*.class
+
+## akka specific
+scala/trunktrunk/logs/*
+
+## sbt specific
+scala/trunktrunk/target/
+scala/trunktrunk/project/boot
+scala/trunktrunk/lib_managed/*
+scala/trunktrunk/project/build/target
+scala/trunktrunk/project/build/lib_managed
+scala/trunktrunk/project/build/src_managed
+scala/trunktrunk/project/plugins/lib_managed
+scala/trunktrunk/project/plugins/target
+scala/trunktrunk/project/plugins/src_managed
+scala/trunktrunk/project/plugins/project
+
+scala/trunktrunk/core/lib_managed
+scala/trunktrunk/core/target
+scala/trunktrunk/pubsub/lib_managed
+scala/trunktrunk/pubsub/target
+
+## intellij
+*.eml
+*.iml
+*.ipr
+*.iws
+scala/trunktrunk/.*.sw?
+scala/trunktrunk/.idea
+
+## paulp script
+/.lib/
