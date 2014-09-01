@@ -1,0 +1,2 @@
+run:
+	runhaskell scotty.hs
